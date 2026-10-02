@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.*
+secrets.toml
+.streamlit/secrets.toml
+
+# Large Datasets & Raw Data (Keep repo lightweight and protect private data)
+*.csv
+!sample_loan_applications.csv
+archive/
+archive*/
+data/
+*.zip
+*.tar.gz
+*.rar
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# IDE & Operating System Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
