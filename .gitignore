@@ -21,6 +21,7 @@ secrets.toml
 # Large Datasets & Raw Data (Keep repo lightweight and protect private data)
 *.csv
 !sample_loan_applications.csv
+!report/*.csv
 archive/
 archive*/
 data/

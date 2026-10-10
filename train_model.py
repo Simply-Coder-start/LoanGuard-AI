@@ -45,3 +45,14 @@ print("\nClassification Report:\n", classification_report(y_test, y_pred, zero_d
 # Step 7: Save model and feature names to model.pkl
 joblib.dump({"model": model, "features": feature_cols}, "model.pkl")
 print("Model and features saved successfully to 'model.pkl'!")
+
+# Step 8: Trigger comprehensive report suite generation
+try:
+    try:
+        from generate_reports import generate_all_reports
+    except ImportError:
+        from report_generation.generate_reports import generate_all_reports
+    print("\nGenerating full suite of report graphs, matrices, and precision metrics...")
+    generate_all_reports()
+except ImportError:
+    pass

@@ -23,8 +23,25 @@
 ```text
 ├── app.py                         # Streamlit interactive web application
 ├── data_cleaning.py               # Data loading, inspection, and cleaning script
-├── train_model.py                 # Standalone model training and export script
-├── model_training.ipynb           # Step-by-step Jupyter Notebook with beginner explanations
+├── train_model.py                 # Standalone model training, export & report generation script
+├── generate_reports.py            # Diagnostic curves, matrices, and metrics report generator
+├── model_training.ipynb           # Step-by-step Jupyter Notebook with evaluation & matrix reports
+├── report/                        # Comprehensive model performance suite (matrices, graphs, reports)
+│   ├── confusion_matrix.png       # Raw counts and normalized percentages confusion matrix
+│   ├── financial_cost_matrix.png  # Financial risk exposure & saved loss matrix
+│   ├── correlation_matrix.png     # Feature and fraud label correlation heatmap
+│   ├── roc_curve.png              # Receiver Operating Characteristic (ROC) curve (AUC)
+│   ├── precision_recall_curve.png # Precision-Recall curve with no-skill baseline
+│   ├── precision_recall_threshold_curve.png # Operating point trade-off curve across thresholds
+│   ├── feature_importance.png     # Logistic regression coefficient drivers
+│   ├── prediction_probability_distribution.png # Score density distribution per class
+│   ├── metrics_comparison_barchart.png # Accuracy, Precision, Recall scorecard
+│   ├── calibration_curve.png      # Probability reliability diagram
+│   ├── metrics_summary.json       # Full metrics schema with float precision
+│   ├── metrics_summary.csv        # Tabular performance metrics
+│   ├── classification_report.csv  # Precision, recall, f1 per class table
+│   ├── threshold_analysis.csv     # Multi-threshold decision lookup table
+│   └── model_performance_report.md# Executive validation report
 ├── model.pkl                      # Serialized trained model & feature list
 ├── sample_loan_applications.csv   # Sample dataset for instant out-of-the-box runs
 ├── requirements.txt               # Project dependencies
@@ -97,6 +114,12 @@ jupyter notebook model_training.ipynb
 ## 🔒 Security & Privacy
 
 This repository excludes all raw private datasets, environment secrets, and local machine configurations. A standardized `.gitignore` is provided to protect proprietary data and ensure lightweight repository distribution.
+
+---
+
+## 👥 Contributors
+
+- **simplycoder** ([@Simply-Coder-start](https://github.com/Simply-Coder-start)) - *Creator & Lead Contributor*
 
 ---
 
