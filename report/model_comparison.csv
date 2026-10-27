@@ -1,0 +1,4 @@
+model,accuracy,balanced_accuracy,precision_fraud,recall_fraud,f1_fraud,roc_auc,true_negatives,false_positives,false_negatives,true_positives
+Raw accuracy baseline (predict legitimate),0.9795,0.5,0.0,0.0,0.0,0.5,9795,0,205,0
+Honest fraud model (balanced logistic regression),0.5181,0.48894159538838877,0.019575177009579343,0.4585365853658537,0.037547433592969845,0.4813999178276622,5087,4708,111,94
+Leakage benchmark (loan_status; invalid for deployment),1.0,1.0,1.0,1.0,1.0,1.0,9795,0,0,205

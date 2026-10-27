@@ -1,0 +1,41 @@
+[
+  {
+    "model":"Raw accuracy baseline (predict legitimate)",
+    "accuracy":0.9795,
+    "balanced_accuracy":0.5,
+    "precision_fraud":0.0,
+    "recall_fraud":0.0,
+    "f1_fraud":0.0,
+    "roc_auc":0.5,
+    "true_negatives":9795,
+    "false_positives":0,
+    "false_negatives":205,
+    "true_positives":0
+  },
+  {
+    "model":"Honest fraud model (balanced logistic regression)",
+    "accuracy":0.5181,
+    "balanced_accuracy":0.4889415954,
+    "precision_fraud":0.019575177,
+    "recall_fraud":0.4585365854,
+    "f1_fraud":0.0375474336,
+    "roc_auc":0.4813999178,
+    "true_negatives":5087,
+    "false_positives":4708,
+    "false_negatives":111,
+    "true_positives":94
+  },
+  {
+    "model":"Leakage benchmark (loan_status; invalid for deployment)",
+    "accuracy":1.0,
+    "balanced_accuracy":1.0,
+    "precision_fraud":1.0,
+    "recall_fraud":1.0,
+    "f1_fraud":1.0,
+    "roc_auc":1.0,
+    "true_negatives":9795,
+    "false_positives":0,
+    "false_negatives":0,
+    "true_positives":205
+  }
+]
